@@ -1,0 +1,198 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="main-presentation">
+			<div class="container">
+				<div class="presentation-bar">
+					<div class="bar-left left">
+						<img src="images/PNGs/Logo%402x.png" alt="CompanyLogo" srcset="images/SVGs/Logo.svg">
+					</div>
+					<div class="bar-right right">
+						<span><img src="images/PNGs/icn_search%402x.png" alt="Serch" srcset="images/SVGs/icn_search.svg"></span>
+						<span><img src="images/PNGs/icn_person%402x.png" alt="User" srcset="images/SVGs/icn_person.svg"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="main-page" class="visible">
+			<div class="nav-bar">
+				<div class="container">
+					<div class="header text-white">
+						<h1>Search Any Email Address</h1>
+					</div>
+					<div id="scondary-header">
+						<h2 style="font-weight: normal;"><span style="font-weight: bold;" class="text-yellow">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</h2>
+					</div>
+					<div id="search-input" >
+						<div id="input" class="left placeholder" data-placeholder="EMAIL">
+							<input type="text" title="EMAIL" id="txtEmail">
+						</div>
+						<div class="right" id="btnRight"><button style="font-weight: bold;" class="go" id="btnGo">GO!</button>
+						</div>						
+					</div>
+					<div id="scondary-header">
+						<h4 class="third-header">
+						<span><img src="images/PNGs/lock%402x.png" alt="Serch" srcset="images/SVGs/lock.svg"></span><span class="text-yellow"> Enter Any Email Address. They won't be notified.</span>
+						</h4>	
+					</div>
+				</div>
+			</div>
+			<div class="main-info">
+				<div class="container">
+					<div class="header text-blue">
+						<h1>Reverse Email Lookup</h1>
+					</div>
+					<div class="text-gray">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+					<div class="columns">
+						<div class="column">
+							
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">1</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+							
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">2</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">3</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+						</div>
+						<div class="column right">
+							
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">4</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+							
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">5</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+							
+							<div class="item">
+							<div class="logo-text" ><span class="text-yellow">6</span></div>
+							<div class="Info">
+							<h4 class="text-blue">Lorem Ipsum</h4>
+							<p class="paragraph" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+
+
+			<div id="result-page" class="not-visible">
+				<div class="result">
+					<div class="container center" id="result">
+						<div class="header text-blue">
+							<h1>Result</h1>
+							<div class="text-gray">Look at the result below to see the details of the person you’re searched for.
+							</div>
+						</div>
+					
+					<div id="info-box">
+                        <div class="item sheet">
+							<div class="logo-text"><span><img src="images/PNGs/icn_person%402x.png" alt="User" srcset="images/SVGs/icn_person.svg"></span></div>
+							<h2 class="text-blue" id='name' style="text-align: left;"></h4>
+							<div class="paragraph notes" id="notes"></div>
+						</div>
+						<div class="columns" style="margin-left: 19%">
+							<div class="column left">
+								<h3 class="text-blue sheet" style="text-align: left; margin-left:0;">Address</h3>
+								<div id="address">
+									<p class="p-sheet" id="address"></p>
+								</div>
+								<h3 class="text-blue sheet" style="text-align: left; margin-left:0;">Email</h3>
+								<div id="email">
+									<p class="p-sheet" id="email"></p>
+								</div>
+							</div>
+
+							<div class="column right">
+								<h3 class="text-blue sheet" style="text-align: left; margin-left:0;">Phone</h3>
+								<div id="phones">
+								</div>
+								<h3 class="text-blue sheet" style="text-align: left; margin-left:0;">Relatives</h3>
+								<div id="relatives">
+									
+								</div>
+							</div>
+						</div>
+                    </div>
+					</div>
+                    <div class="nav-bar">
+				<div class="container">
+						<div class="header text-white">
+						<h1>Can’t Find The Right Person?</h1>
+					</div>
+					<div id="scondary-header">
+						<h2 style="font-weight: normal;"><span style="font-weight: bold;" class="text-yellow">Try Again</span> - Make a new search</h2>
+					</div>
+					<div id="search-input" >
+						<div id="input" class="left placeholder" data-placeholder="EMAIL">
+							<input type="text" title="EMAIL" id="txtEmailA">
+						</div>
+						<div class="right" id="btnRight"><button style="font-weight: bold;" class="go" id="btnGoA">GO!</button>
+						</div>						
+					</div>
+					<div id="scondary-header">
+						<h4 class="third-header">
+						<span><img src="images/PNGs/lock%402x.png" alt="Serch" srcset="images/SVGs/lock.svg"></span><span class="text-yellow"> Enter Any Email Address. They won't be notified.</span>
+						</h4>	
+					</div>				
+				</div>
+					
+				</div>
+			</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="footer-containter">
+					<div class="footer-left left">
+						<p class="footer-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="footer-right right">
+						<h3><span class="text-blue">Terms | Privacy</span></h3>
+					</div>
+					
+				</div>
+			</div>
+	</body>
+	</html>
