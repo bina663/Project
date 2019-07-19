@@ -6,47 +6,34 @@ $( document ).ready(function() {
 		createQueryHash(data);
 	});
 
-	$('#btnGoA').click(function(){
-		var data = $("#txtEmailA").val();
-		$("#txtEmailA").val("");
+	$('#btnGoC').click(function(){
+		window.scrollTo(0,0)
+		var data = $("#txtEmailC").val();
+		$("#txtEmailC").val("");
 		createQueryHash(data);
 	});
 
 	$('#txtEmail').focus(function(){
-		$('#input').attr('class','placeholder left top');
+		$('#input').attr('class','placeholder left top input');
 		$('#txtEmail').attr('class','active');
 	});
 
 	$('#txtEmail').blur(function(){
-		var Email = $('#txtEmail').val();
-		if (Email == "") {
-			$('#input').removeAttr('class');
-			$('#input').attr('class','placeholder left');
-			$('#txtEmail').removeAttr('class');
-		}else{
-			if (!isValidEmail(Email)) {
-				$('#input').removeAttr('class');
-
-				$('#txtEmail').removeAttr('class');
-				$('#txtEmail').attr('class','error');
-				$('#input').removeAttr('data-placeholder');
-				$('#input').attr('data-placeholder','Please add a valid email address');
-
-				$('#input').attr('class','placeholder left top text-red');
-			}else{
-				$('#txtEmail').removeAttr('class');
-				$('#input').removeAttr('data-placeholder');
-				$('#input').attr('data-placeholder','EMAIL');
-			}
-		}
+		changePlaceHolder('txtEmail','input')
 	});
 
-	$('#txtEmailA').blur(function(){
-		
+
+	$('#txtEmailC').focus(function(){
+		$('#inputC').attr('class','placeholder left top input');
+		$('#txtEmailC').attr('class','active');
+	});
+
+	$('#txtEmailC').blur(function(){
+		changePlaceHolder('txtEmailC','inputC')
 	});
 
 	$.ajax({
-  	url: "http://localhost:3000/data",
+  	url: "https://data-json-api.herokuapp.com/data",
   	success: function( result ) {
     		var data;
 			data = result;
@@ -154,6 +141,30 @@ function createQueryHash(email){
       window.location.hash = '#';
     }
 
+}
+
+function changePlaceHolder(input,div){
+	var email = $('#'+input).val();
+	if (email == "") {
+			$('#'+div).removeAttr('class');
+			$('#'+div).attr('class','placeholder left input');
+			$('#'+input).removeAttr('class');
+		}else{
+			if (!isValidEmail(email)) {
+				$('#'+div).removeAttr('class');
+
+				$('#'+input).removeAttr('class');
+				$('#'+input).attr('class','error');
+				$('#'+div).removeAttr('data-placeholder');
+				$('#'+div).attr('data-placeholder','Please add a valid email address');
+
+				$('#'+div).attr('class','placeholder left top text-red input');
+			}else{
+				$('#'+input).removeAttr('class');
+				$('#'+div).removeAttr('data-placeholder');
+				$('#'+div).attr('data-placeholder','EMAIL');
+			}
+		}
 }
 
 

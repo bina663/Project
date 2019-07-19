@@ -218,16 +218,16 @@ margin: 10px;
 }
 
 .logo-text{
-     width: 100px;
-     height: 100px;
+     width: 90px;
+     height: 90px;
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
      background: #004A80;
      float: left;
-     margin-top: 2%;
      margin-right: 4%;
      display: table;
+     font-weight: bold;
 }
 
 .logo-text span {
@@ -380,7 +380,7 @@ margin: 10px;
 	margin-right: 1%
 }
 
-#input{
+.input{
 width: 76%; 
 margin-right: 2%
 }
@@ -407,7 +407,7 @@ width: 80%;
 }
 
 .container{
-	width: 96%;
+	width: 92%;
 	margin: 0 auto;
 }
 
@@ -421,7 +421,7 @@ width: 80%;
 }
 
 #search-input{
-	width: 99%;
+	width: 98%;
 	height: 70px;
 	margin: 0 auto;
 }
@@ -434,21 +434,17 @@ width: 80%;
 }
 
 .header{
-	font-size: 3vw;
+	font-size: 18px;
 }
 
 .Info{
-	width: 66%; 
-	margin-left: 34% !important; 
+	width: 70%; 
+	margin-left: 30% !important; 
 	text-align: left !important;"
 }
 
 .item{
 	width: 100%;
-}
-
-.logo-text{
- width: 30%
 }
 
 .colums{
@@ -476,14 +472,13 @@ margin:0 auto;
 }
 
 .logo-text{
-     width: 80px;
-     height: 80px;
+     width: 63px;
+     height: 63px;
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
      background: #004A80;
      float: left;
-     margin-top: 2%;
      margin-right: 4%;
      display: table;
 }
@@ -496,19 +491,27 @@ margin:0 auto;
 	margin-bottom: 5%;
 }
 
+.desc{
+	font-size: 20px !important;
+}
+
+h2{
+	font-size: 20px !important;
+}
+
 }
 
 @media only screen and (max-width: 720px){
 
 
-#input{
+.input{
 	float: none;
 	width: 100% !important;
 	margin-right: 0;
 	height: 40%;
 }
 
-#input input{
+.input input{
 	margin-right: 0;
 }
 
@@ -529,6 +532,7 @@ width: 100%;
 
 #search-input{
 	height: 160px;
+	width: 98%;
 }
 
 #scondary-header{
@@ -541,18 +545,19 @@ width: 100%;
 }
 
 .item{
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 4%;
 }
 
 .Info{
 	margin-left: 20% !important;
+	width: 80%;
 }
 
 .logo-text{
-	height: 60px;
-	width: 60px;
+	height: 50.4px;
+	width: 50.4px;
 }
 
 .logo-text span {
@@ -585,4 +590,11 @@ width: 100%;
 	margin-bottom: 5%;
 }
 
+.desc{
+	font-size: 18px !important;
+}
+
+h2{
+	font-size: 18px !important;
+}
 }
