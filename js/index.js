@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
 	$('#txtEmail').focus(function(){
 		$('#input').attr('class','placeholder left top input');
-		$('#txtEmail').attr('class','active');
+		$('#txtEmail').attr('class','active txtEmail');
 	});
 
 	$('#txtEmail').blur(function(){
@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
 	$('#txtEmailC').focus(function(){
 		$('#inputC').attr('class','placeholder left top input');
-		$('#txtEmailC').attr('class','active');
+		$('#txtEmailC').attr('class','active txtEmail');
 	});
 
 	$('#txtEmailC').blur(function(){
@@ -149,12 +149,13 @@ function changePlaceHolder(input,div){
 			$('#'+div).removeAttr('class');
 			$('#'+div).attr('class','placeholder left input');
 			$('#'+input).removeAttr('class');
+			$('#'+input).attr('class','txtEmail');
 		}else{
 			if (!isValidEmail(email)) {
 				$('#'+div).removeAttr('class');
 
 				$('#'+input).removeAttr('class');
-				$('#'+input).attr('class','error');
+				$('#'+input).attr('class','error txtEmail');
 				$('#'+div).removeAttr('data-placeholder');
 				$('#'+div).attr('data-placeholder','Please add a valid email address');
 

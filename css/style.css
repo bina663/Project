@@ -411,11 +411,11 @@ width: 80%;
 	margin: 0 auto;
 }
 
-#txtEmail{
+.txtEmail{
 	width: 100% !important;
 }
 
-#btnGo {
+.go {
 	width: 100%;
 	font-weight: bold;
 }
@@ -515,11 +515,11 @@ h2{
 	margin-right: 0;
 }
 
-#txtEmail{
+.txtEmail{
 width: 100%;
 }
 
-#btnGo{
+.go{
 	width: 100% !important;
 }
 
