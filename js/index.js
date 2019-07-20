@@ -1,5 +1,20 @@
 $( document ).ready(function() {
 
+	document.querySelector('#txtEmail').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { 
+      $('#btnGo').click();
+      }
+	});
+
+	document.querySelector('#txtEmailC').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { 
+      $('#btnGoC').click();
+      }
+	});
+
+
 	$('#btnGo').click(function(){
 		var data = $("#txtEmail").val();
 		$("#txtEmail").val("");
@@ -78,8 +93,8 @@ function renderResultPage(data){
 
 	name.innerHTML  = data.name + ', '+ data.age;
 	notes.innerHTML = '<p class="paragraph">' + data.notes + '</p>';
-	address.innerHTML = '<p class="p-sheet">'+data.address+'</p>';
-	email.innerHTML = '<p class="p-sheet">' +  data.email +'</p>';
+	address.innerHTML = '<p class="p-sheet paragraph">'+data.address+'</p>';
+	email.innerHTML = '<p class="p-sheet paragraph">' +  data.email +'</p>';
 
 	var PhoneHTML = "";
 	data.phoneNumbers.forEach(function(item){
@@ -92,7 +107,7 @@ function renderResultPage(data){
 	var relativesHTML = "";
 	data.relatives.forEach(function(item){
 		if (typeof item.name !== "undefined") {
-		relativesHTML = relativesHTML + '<p class="p-sheet">'+  item.name +'</p>';
+		relativesHTML = relativesHTML + '<p class="p-sheet paragraph">'+  item.name +'</p>';
 		}
 	});
 	relatives.innerHTML = relativesHTML;

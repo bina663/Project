@@ -14,7 +14,8 @@ body{
 
 .main-presentation{
 	background-color: #004A80;
-	height: auto;
+	height: 65px;
+	overflow: auto;
 }
 
 .nav-bar{
@@ -34,8 +35,7 @@ body{
 	background-color: #004A80;
 	height: auto;
 	overflow: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 2%;
 }
 
 .right{
@@ -162,11 +162,14 @@ line-height: 30px;
 }
 
 .third-header{
-	margin-top: 15px;
+	align-content: center;
 	font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif; 
-	font-size: 16px;
+	color: #FFFFFF;
+	float: left;
 	overflow: auto;
-	text-align: left !important;
+	margin-bottom: 2%;
+	margin-top: 30px;
+	width: 100%;
 }
 
 .main-info{
@@ -174,12 +177,28 @@ line-height: 30px;
 	height: auto;
 	width: 100%;
 	float: left;
-	padding-top: 40px;
+	padding-top: 30px;
 	overflow: auto;
 }
 
 .main-container .header{
 	margin-top: 0;
+}
+
+.main{
+	margin: 0 auto !important;
+}
+
+.lock-logo{
+width: 2%;
+}
+
+.info-logo{
+	width: 97%;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 0.20%;
+	margin-bottom: 50px;
 }
 
 h1,h2,h3{
@@ -203,8 +222,8 @@ margin: 10px;
 }
 
 .columns{
-	margin-top: 4%;
 	margin-bottom: 3%;
+	margin-left: 17%;
 	overflow: auto;
 }
 
@@ -225,12 +244,33 @@ margin: 10px;
      border-radius: 50%;
      background: #004A80;
      float: left;
-     margin-right: 4%;
      display: table;
      font-weight: bold;
 }
 
 .logo-text span {
+	font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif; 
+	font-size: 48px;
+	color: #F6BC25;
+	letter-spacing: 0;
+	text-align: center;
+	display: table-cell; 
+  vertical-align: middle;
+}
+
+.logo-person{
+	width: 90px;
+     height: 90px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #004A80;
+     float: left;
+     display: table;
+     font-weight: bold;
+}
+
+.logo-person span {
 	font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif; 
 	font-size: 48px;
 	color: #F6BC25;
@@ -390,8 +430,17 @@ margin-right: 2%
 }
 
 .notes{
-margin-left: 14%;
+margin-left: 12%;
 width: 80%;
+}
+
+#user-logo{
+	height: 46px;
+	width: 40px;
+}
+
+.name{
+	margin-left: 11%;	
 }
 
 @media only screen and (max-width: 1150px){
@@ -401,7 +450,7 @@ width: 80%;
 }
 
 .presentation-bar{
-	margin-top: 1%;
+	margin-top: 3%;
 	 width: 100%;
 	 height: 30px;
 }
@@ -479,7 +528,6 @@ margin:0 auto;
      border-radius: 50%;
      background: #004A80;
      float: left;
-     margin-right: 4%;
      display: table;
 }
 .logo-text span {
@@ -500,19 +548,28 @@ h2{
 }
 
 }
-
 @media only screen and (max-width: 720px){
+.third-header{
+	margin-top: 10px;
+}
 
+.info-logo{
+	margin-left: 5%;
+	width: 90%;
+	margin-bottom: 10px;
+}
 
 .input{
 	float: none;
 	width: 100% !important;
 	margin-right: 0;
-	height: 40%;
+	height: 50px;
+	font-size: 14px;
 }
 
 .input input{
 	margin-right: 0;
+	font-size: 12px;
 }
 
 .txtEmail{
@@ -521,6 +578,7 @@ width: 100%;
 
 .go{
 	width: 100% !important;
+	height: 50px;
 }
 
 #btnRight{
@@ -531,8 +589,12 @@ width: 100%;
 }
 
 #search-input{
-	height: 160px;
+	height: auto;
 	width: 98%;
+}
+
+#search-input input{
+height: 50px;
 }
 
 #scondary-header{
@@ -551,8 +613,12 @@ width: 100%;
 }
 
 .Info{
-	margin-left: 20% !important;
-	width: 80%;
+	margin-left: 22% !important;
+	width: 78%;
+}
+
+.logo-person{
+	display: none;
 }
 
 .logo-text{
@@ -571,6 +637,10 @@ width: 100%;
 	margin: 0 auto;
 }
 
+.footer-paragraph{
+	text-align: left;
+}
+
 .footer-right{
 	width: 100% !important;
 	float: right;
@@ -579,6 +649,7 @@ width: 100%;
 
 .footer-containter{
 	text-align: center;
+	width: 90%;
 }
 
  .sheet{
