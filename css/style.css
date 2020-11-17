@@ -135,8 +135,7 @@ line-height: 30px;
 	border-radius: 3px;
 	background: #FFFFFF;
 	height: 100%;
-	padding-left: 0.8%;
-	padding-top:3%;
+	padding-left:5%;
 }
 
 .go{
@@ -404,7 +403,7 @@ margin: 10px;
 .Info{
 	width: 66%; 
 	margin-left: 34% !important; 
-	text-align: left !important;"
+	text-align: left !important;
 }
 
 .item{
@@ -489,7 +488,7 @@ width: 80%;
 .Info{
 	width: 70%; 
 	margin-left: 30% !important; 
-	text-align: left !important;"
+	text-align: left !important;
 }
 
 .item{
@@ -506,8 +505,9 @@ width: 80%;
 }
 
 .footer-left{
-width: 70% !important;
-margin:0 auto;
+	width: 70% !important;
+	margin:0 auto;
+	padding: 15px;
 }
 
 .footer-right{
@@ -518,6 +518,7 @@ margin:0 auto;
 
 .footer-paragrap{
 	font-size: 8px !important;
+	
 }
 
 .logo-text{
@@ -635,6 +636,7 @@ height: 50px;
 .footer-left{
 	width: 100% !important;
 	margin: 0 auto;
+	padding:20px;
 }
 
 .footer-paragraph{
@@ -650,6 +652,7 @@ height: 50px;
 .footer-containter{
 	text-align: center;
 	width: 90%;
+	
 }
 
  .sheet{
